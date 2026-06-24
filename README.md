@@ -1,4 +1,3 @@
-```markdown
 # CFD Fluidized Bed Simulation
 
 Computational fluid dynamics simulation of a gas-solid fluidized bed using OpenFOAM. The project models particle flow behaviour, pressure drop, and voidage distribution across varying fluidization regimes.
@@ -39,7 +38,7 @@ cfd-fluidized-bed/
 │   ├── mesh_independence.md
 │   └── validation_notes.md
 ├── runs/
-│   └── run_log.csv
+│   └── run_log.csv         # Simulation run history
 ├── .gitignore
 └── README.md
 ```
@@ -58,15 +57,17 @@ cfd-fluidized-bed/
 ### Running the simulation
 
 ```bash
+# Clone the repo
 git clone https://github.com/yourname/cfd-fluidized-bed.git
 cd cfd-fluidized-bed/case
+
+# Generate mesh
 blockMesh
+
+# Run solver
 twoPhaseEulerFoam
-```
 
-Or use the all-in-one script:
-
-```bash
+# Or use the all-in-one script
 ./Allrun
 ```
 
@@ -149,4 +150,6 @@ refactor: split Allrun into Allrun.mesh and Allrun.solve
 - Kunii, D. and Levenspiel, O. (1991). *Fluidization Engineering*. 2nd ed. Butterworth-Heinemann.
 - Gidaspow, D. (1994). *Multiphase Flow and Fluidization*. Academic Press.
 - OpenFOAM User Guide: https://www.openfoam.com/documentation/user-guide
-```
+
+---
+
