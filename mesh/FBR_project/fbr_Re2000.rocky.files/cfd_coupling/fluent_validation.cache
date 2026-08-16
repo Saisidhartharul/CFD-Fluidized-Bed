@@ -1,0 +1,1 @@
+{"mtime": 1786878137, "binary_hex": "febe8fa76a42d5786ee6e38041a1401b", "validation_info": {"thermal_walls": {}, "fluid_interface_map": {}, "unsupported_thermal_walls": [], "cell_2_bnd_map": {"1": [5, 6, 7, 8]}}, "version": 3, "single_phase": true, "phases_names": [], "has_species": false, "species_names": []}

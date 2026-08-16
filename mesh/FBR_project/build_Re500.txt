@@ -1,0 +1,96 @@
+=== reading mesh ===
+
+wall zones present: ['wall-left', 'wall-right', 'wall-front', 'wall-back']
+
+--- S.setup.general.solver
+{'type': 'pressure-based', 'velocity_formulation': 'absolute', 'time': 'unsteady-1st-order'}
+
+--- S.setup.general.operating_conditions.gravity
+{'enable': True, 'components': [0.0, 0.0, -9.81], 'gravity_mrf_behavior': True}
+
+--- S.setup.models.energy
+{'enabled': True, 'viscous_dissipation': False, 'pressure_work': False, 'kinetic_energy': False, 'inlet_diffusion': True}
+
+--- S.setup.models.viscous.model
+'k-epsilon'
+
+--- S.setup.models.viscous.k_epsilon_model
+'standard'
+
+--- S.setup.models.viscous.near_wall_treatment.wall_treatment
+'scalable-wall-functions'
+
+--- S.setup.materials.fluid['air']
+{'name': 'air', 'chemical_formula': '', 'density': {'option': 'value', 'value': 1.2}, 'viscosity': {'option': 'value', 'value': 1.8e-05}, 'specific_heat': {'option': 'value', 'value': 1006.43}, 'thermal_conductivity': {'option': 'value', 'value': 0.0242}}
+
+--- S.setup.boundary_conditions.velocity_inlet['inlet']
+{'name': 'inlet', 'momentum': {'velocity_specification_method': 'Magnitude, Normal to Boundary', 'reference_frame': 'Absolute', 'velocity_magnitude': {'option': 'value', 'value': 1.875}, 'initial_gauge_pressure': {'option': 'value', 'value': 0}}, 'turbulence': {'turbulence_specification': 'Intensity and Hydraulic Diameter', 'turbulent_intensity': 0.05, 'hydraulic_diameter': 0.07}, 'thermal': {'temperature': {'option': 'value', 'value': 293.15}}}
+
+--- S.setup.boundary_conditions.pressure_outlet['outlet']
+{'name': 'outlet', 'momentum': {'backflow_reference_frame': 'Absolute', 'gauge_pressure': {'option': 'value', 'value': 0}, 'pressure_profile_multiplier': 1.0, 'backflow_dir_spec_method': 'Normal to Boundary', 'backflow_pressure_spec': 'Total Pressure', 'prevent_reverse_flow': False, 'radial_equ_pressure_distribution': False, 'avg_pressure_spec': False, 'target_mass_flow_rate': False}, 'turbulence': {'turbulence_specification': 'Intensity and Hydraulic Diameter', 'backflow_turbulent_intensity': 0.05, 'backflow_hydraulic_diameter': 0.07}, 'thermal': {'backflow_total_temperature': {'option': 'value', 'value': 293.15}}}
+
+--- S.solution.methods.p_v_coupling
+{'flow_scheme': 'SIMPLE', 'flux_type': 'Rhie-Chow: momentum based', 'flux_auto_select': True}
+
+--- S.solution.methods.transient_formulation
+'unsteady-1st-order'
+
+--- S.solution.run_calculation.transient_controls
+{'type': 'Fixed', 'method': 'User-Specified', 'time_step_count': 0, 'time_step_size': 0.0005, 'max_iter_per_time_step': 20, 'flow_time': 0, 'extrapolate_variables': False, 'predict_next': False, 'fixed_periodic': {'enabled': False}}
+
+=== writing case ===
+wrote E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.cas.h5
+
+=== APPLIED (48) ===
+  S.setup.general.solver.type = 'pressure-based'
+  S.setup.general.solver.time = 'unsteady-1st-order'
+  S.setup.general.solver.velocity_formulation = 'absolute'
+  S.setup.general.operating_conditions.gravity.enable = True
+  S.setup.general.operating_conditions.gravity.components = [0.0, 0.0, -9.81]
+    [gravity vector] via S.setup.general.operating_conditions.gravity.components
+  S.setup.models.energy.enabled = True
+  S.setup.models.viscous.model = 'k-epsilon'
+  S.setup.models.viscous.k_epsilon_model = 'standard'
+    [k-e variant] via S.setup.models.viscous.k_epsilon_model
+  S.setup.models.viscous.near_wall_treatment.wall_treatment = 'scalable-wall-functions'
+    [near-wall treatment] via S.setup.models.viscous.near_wall_treatment.wall_treatment
+  S.setup.materials.fluid['air'].density.value = 1.2
+    [air density] via S.setup.materials.fluid['air'].density.value
+  S.setup.materials.fluid['air'].viscosity.value = 1.8e-05
+    [air viscosity] via S.setup.materials.fluid['air'].viscosity.value
+  S.setup.boundary_conditions.velocity_inlet['inlet'].momentum.velocity_magnitude.value = 1.875
+    [inlet velocity] via S.setup.boundary_conditions.velocity_inlet['inlet'].momentum.velocity_magnitude.value
+  S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.turbulent_specification = 'Intensity and Hydraulic Diameter'
+    [inlet turb spec] via S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.turbulent_specification
+  S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.turbulent_intensity.value -> no such path ('turbulent_intensity' object has no attribute 'value')
+  S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.turbulent_intensity = 0.05
+    [inlet turb intensity] via S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.turbulent_intensity
+  S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.hydraulic_diameter.value -> no such path ('hydraulic_diameter' object has no attribute 'value')
+  S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.hydraulic_diameter = 0.07
+    [inlet hydraulic diameter] via S.setup.boundary_conditions.velocity_inlet['inlet'].turbulence.hydraulic_diameter
+  S.setup.boundary_conditions.velocity_inlet['inlet'].thermal.temperature.value = 293.15
+    [inlet temperature] via S.setup.boundary_conditions.velocity_inlet['inlet'].thermal.temperature.value
+  S.setup.boundary_conditions.pressure_outlet['outlet'].momentum.gauge_pressure.value = 0.0
+    [outlet gauge pressure] via S.setup.boundary_conditions.pressure_outlet['outlet'].momentum.gauge_pressure.value
+  S.setup.boundary_conditions.pressure_outlet['outlet'].thermal.backflow_total_temperature.value = 293.15
+    [outlet backflow total temperature] via S.setup.boundary_conditions.pressure_outlet['outlet'].thermal.backflow_total_temperature.value
+  S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.turbulence_specification = 'Intensity and Hydraulic Diameter'
+    [outlet turb spec] via S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.turbulence_specification
+  S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.backflow_turbulent_intensity = 0.05
+    [outlet backflow turb intensity] via S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.backflow_turbulent_intensity
+  S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.backflow_hydraulic_diameter = 0.07
+    [outlet backflow hydraulic diameter] via S.setup.boundary_conditions.pressure_outlet['outlet'].turbulence.backflow_hydraulic_diameter
+  S.solution.methods.p_v_coupling.flow_scheme = 'SIMPLE'
+  S.solution.methods.transient_formulation = 'unsteady-1st-order'
+    [transient formulation] via S.solution.methods.transient_formulation
+  S.solution.initialization.initialization_type = 'standard'
+  compute_defaults.all_zones() unavailable: 'super' object has no attribute 'all_zones'
+  standard_initialize()
+  S.solution.run_calculation.transient_controls.time_step_size = 0.0005
+    [time step size] via S.solution.run_calculation.transient_controls.time_step_size
+  S.solution.run_calculation.transient_controls.type = 'Fixed'
+    [time advancement type] via S.solution.run_calculation.transient_controls.type
+
+=== PROBLEMS (0) ===
+
+__BUILD_DONE__

@@ -1,0 +1,6 @@
+gf type: <class 'kraken20.plugins.api.ka_grid_function.KAGridFunction'>
+gf members: ['GetArray', 'GetAverage', 'GetGrid', 'GetIsStatic', 'GetIsTransient', 'GetLimits', 'GetLocation', 'GetMapLocations', 'GetMax', 'GetMin', 'GetName', 'GetStandardDeviation', 'GetSum', 'GetSumSquared', 'GetTimeStep', 'GetUnit', 'GetValue', 'GetVariance', 'Modified', 'SetCurrentTimeStep', 'TrackSubject', 'average', 'is_static', 'is_transient', 'limits', 'max', 'min', 'standard_deviation', 'sum', 'sum_squared', 'unit', 'variance']
+
+geom type: <class '_sci20core.UnstructuredGeometry3D_Topo0D'>
+geom members: ['CloneWithNewTopology', 'GetBasis', 'GetCellAreaFunction', 'GetCellBottomZFunction', 'GetCellCenterFunction', 'GetCellDeltasFunction', 'GetCellDxFunction', 'GetCellDyFunction', 'GetCellDzFunction', 'GetCellLengthFunction', 'GetCellTopZFunction', 'GetEdgeCenterFunction', 'GetFaceAreaFunction', 'GetFaceCenterFunction', 'GetInfo', 'GetMemoryLocation', 'GetName', 'GetNumberOfDimensions', 'GetPointsFunction', 'GetRawPointsFunction', 'GetSharedPointsFunction', 'GetTopology', 'GetTypeName', 'GetVolumeFunction', 'HasInfo', 'InterpolatePoints', 'NumberOfDimensions', 'PhysicalToNaturalPoints', 'PoscConversionFromBase', 'PoscConversionFromUnit1ToUnit2', 'PoscConversionToBase', 'SetInfo', 'SetName', 'SetRawPoints']
+DONE

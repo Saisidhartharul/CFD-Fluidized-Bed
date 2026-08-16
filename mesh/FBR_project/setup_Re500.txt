@@ -1,0 +1,102 @@
+Rocky 25.2.0   building case Re500
+settled bed: 11 outputs, last t = 0.500 s
+reopened E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.rocky
+restart timeset ! 'NoneType' object has no attribute 'GetValues'
+coupling mode now: fluent_two_way
+coupling process : RAFluentTwoWayCoupling
+
+----- coupling process state as created
+   GetAbsoluteValue                               = 0.05
+   GetAvailableCoupledBoundaryNames               = []
+   GetAveragingMethod                             = 'VolumetricDiffusion'
+   GetAveragingRadiusType                         = 'FractionMaximumParticleSize'
+   GetBackDiffusion                               = False
+   GetCFDParametersList                           = <rocky30.plugins.api.ra_cfd_parameters.RACFDParametersList object at 0x000002E09A8EABC0>
+   GetChildrenClassesToIgnore                     = []
+   GetConvectiveHeatTransferLaw                   = 'none'
+   GetCouplingFilesKept                           = 0
+   GetCurveNames                                  = []
+   GetCurveNamesAssociation                       = {}
+   GetDataId                                      = 'project.study_00001.cfd_coupling.fluent_two_way'
+   GetDecompositionFactor                         = 0.0
+   GetDiffusionCoefficient                        = 1.0
+   GetDragLaw                                     = 'HuilinGidaspow2003'
+   GetFluentAdditionalArgs                        = ''
+   GetFluentExecutionMode                         = 'serial'
+   GetFluentOutputFrequencyMultiplier             = 100
+   GetFluentReleases                              = <list_reverseiterator object at 0x000002E09A8EABC0>
+   GetFluentSolverProcesses                       = 1
+   GetFluentVersion                               = '2025 R2'
+   GetFractionParticleSize                        = 3.5
+   GetGeometry                                    = None
+   GetGeometryQuantity                            = Quantity('length', 'm')
+   GetGeometryUnit                                = 'm'
+   GetGridFunctionNames                           = []
+   GetLiftLaw                                     = 'none'
+   GetMappingMethod                               = 'VolumetricDiffusion'
+   GetMaximumIterations                           = 500
+   GetMaximumResidualTolerance                    = 0.001
+   GetMaximumTimeSteps                            = 10
+   GetMaximumVolumeFraction                       = 1.0
+   GetMaximumVolumeFractionTarget                 = 0.65
+   GetMinimumIterations                           = 0
+   GetMinimumTimeSteps                            = 1
+   GetMorsiAndAlexanderK1                         = 0.0
+   GetMorsiAndAlexanderK2                         = 0.0
+   GetMorsiAndAlexanderK3                         = 0.0
+   GetName                                        = '2-Way Fluent'
+   GetNumberOfSubsteps                            = 1
+   GetNumberOfThreads                             = 1
+   GetOverwriteCfdUpdateDistance                  = False
+   GetSolidsMaximumVolumeFractionTarget           = 0.65
+   GetSubject                                     = FluentTwoWayCouplingSubject(absolute_value=Scalar(0.05, 'm', 'length'), additional_input_variables=[], additional_output_variables=[{'name': 'Static Pressure', 
+   GetSubstepping                                 = False
+   GetSyamlalObrienC1                             = 0.8
+   GetSyamlalObrienD1                             = 2.65
+   GetTimeSet                                     = TimeSet(["1990-01-01 (00:00:00)"])
+   GetTimeStatistics                              = None
+   GetTorqueLaw                                   = 'none'
+   GetUseDatInitialization                        = False
+   GetUseTurbulentDispersion                      = False
+   GetUseUserDefinedConstants                     = False
+   GetUserCfdUpdateDistance                       = 1.0
+   GetValidAveragingMethodValues                  = ['UniformDistribution', 'VolumetricDiffusion', 'DiffusionSolution']
+   GetValidAveragingRadiusTypeValues              = ['FractionMaximumParticleSize', 'AbsoluteValue']
+   GetValidFluentExecutionModeValues              = ['serial', 'local_parallel', 'distributed_parallel']
+   GetValidMappingMethodValues                    = ['UniformDistribution', 'VolumetricDiffusion', 'DiffusionSolution']
+   GetVirtualMassLaw                              = 'none'
+   GetVolumeFractionTarget                        = 0.65
+   IsBackDiffusionEnabled                         = False
+   IsFluentRunning                                = False
+   IsSubsteppingEnabled                           = False
+   IsValid                                        = True
+
+CFD per-particle parameter rows: 1
+  row 0: valid convective heat transfer laws = ['none', 'RanzMarshall1952', 'Whitaker1972', 'Gunn1978', 'custom']
+          valid drag laws = ['WenYu1966', 'SchillerNaumann1933', 'HaiderLevenspiel1989', 'Ganser1993', 'Ergun1958', 'GidaspowBezburuahDing1992', 'HuilinGidaspow2003', 'DiFelice1994', 'Dallavalle1948', 'MarheinekeWegener2011', 'SyamlalOBrien1987', 'MorsiAlexander1972', 'HillKochLadd2001', 'HillKoch2001', 'custom']
+          drag law in use  = 'HuilinGidaspow2003'
+          lift law         = 'none'
+          torque law       = 'none'
+fluent releases available: <list_reverseiterator object at 0x000002E09A8CAC80>
+fluent version currently : 2025 R2
+coupling files kept now: 0
+
+solver: duration=8.0 interval=0.02 multiplier=40 target=GPU ncpus=4
+
+saved E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.rocky
+
+=== NOTES (10) ===
+  OK   save for restart -> E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.rocky
+  OK   enable 2-Way Fluent against E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.cas.h5
+  OK   row 0 convective heat transfer law = 'RanzMarshall1952' (now 'RanzMarshall1952')
+  OK   Fluent solver processes = 4
+  OK   coupling files kept = 0 (keep all)
+  OK   duration 8.0 s
+  OK   Fluent outputs multiplier = 40  (0.0200 s / 5.0e-04 s = 0.02 s output)
+  OK   target GPU
+  OK   gpu 0
+  OK   processors 4
+
+=== PROBLEMS (0) ===
+
+__SETUP_DONE__

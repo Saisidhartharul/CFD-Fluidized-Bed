@@ -1,0 +1,11 @@
+before: target=CPU ncpus=8 gpu=0 gpus=[] duration=0.5 interval=0.05
+valid targets: ['CPU', 'GPU', 'MULTI_GPU']
+after:  target=GPU ncpus=4 gpu=0 gpus=[0]
+
+=== starting settling run (target=GPU, ncpus=4) ===
+StartSimulation returned True
+timeset ! 'NoneType' object has no attribute 'GetValues'
+output times: 0, last = None s
+!! simulation did not advance -- see rocky_simulation.rocky20.log
+
+__RUN_DONE__

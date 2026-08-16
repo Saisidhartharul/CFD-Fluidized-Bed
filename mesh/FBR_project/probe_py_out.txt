@@ -1,0 +1,7 @@
+PY JOURNAL RUNNING
+python 3.10.16 (remotes/origin/14d18b8e2626165312e076b70cf60f0faa8db8d5-dirty:14d18b8e, May 20 2) [MSC v.1942 64 bit (AMD64)]
+globals: ['DeprecatedSettingWarning', 'PyStateEngine', 'PyTUI', 'Quantity', 'UnstableSettingWarning', 'ansys', 'cx', 'datetime', 'dir', 'exit', 'flapi', 'fldoc', 'flglobals', 'getpass', 'insert_pyfluent_module_path', 'make_quantity', 'os', 'out', 'parametric_study', 'preferences', 'preferences_app', 'pydoc', 'quit', 'run_menu', 'shutil', 'solver', 'solverworkflow', 'solverworkflow_app', 'sys', 'units', 'warnings', 'workflow', 'workflow_app']
+
+solver -> <class 'ansys.fluent.core.session_solver.Solver'>
+  members: ['chdir', 'connection_properties', 'download', 'events', 'execute_tui', 'exit', 'fields', 'file_exists_on_remote', 'force_exit', 'get_fluent_version', 'get_state', 'health_check', 'id', 'journal', 'monitors', 'preferences', 'read_case_lightweight', 'rp_vars', 'scheme_eval', 'set_state', 'settings', 'system_coupling', 'transcript', 'tui', 'upload', 'workflow']
+DONE

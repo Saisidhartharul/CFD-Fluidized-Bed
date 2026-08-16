@@ -1,0 +1,53 @@
+Rocky 25.2.0
+project saved up-front: E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_bed_settle.rocky
+geometries imported: ['inlet', 'outlet', 'wall-left', 'wall-right', 'wall-front', 'wall-back']
+particle shape = sphere
+size distribution entries: 1
+inlet property rows: 1
+
+=== saving project ===
+saved E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_bed_settle.rocky
+
+project built; run it with Rocky.exe --simulate
+
+=== NOTES (36) ===
+  OK   study name
+  OK   gravity X = 0
+  OK   gravity Y = 0
+  OK   gravity Z = -9.81
+  OK   numerical softening 0.1
+  OK   thermal model on
+  OK   conduction correction Morris et al. Area+Time
+  OK   import walls from E:\CFD_Project_Fluidized_Bed\mesh\FBR_project\fbr_Re500.cas.h5
+  note inlet thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  note outlet thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  note wall-left thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  note wall-right thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  note wall-front thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  note wall-back thermal not set ('RAWall' object has no attribute 'SetThermalBoundaryType')
+  OK   use bulk density cleared
+  OK   density 1500
+  OK   Young's modulus 1e7
+  OK   thermal conductivity 1.4
+  OK   specific heat 800
+  OK   particle name sand4mm
+  OK   size 0.004 m
+  OK   cumulative 100%
+  OK   create volumetric inlet
+  OK   all geometries enabled
+  OK   bed particle = sand4mm
+  OK   bed mass 4.032 kg
+  OK   bed temperature 363 K
+  OK   seed coordinates
+  OK   box center
+  OK   box dimensions
+  OK   duration 0.5 s
+  OK   output interval 0.05 s
+  OK   simulation target GPU
+  OK   target gpu 0
+  OK   target gpus [0]
+  OK   processors 4
+
+=== PROBLEMS (0) ===
+
+__ROCKY_BUILD_DONE__

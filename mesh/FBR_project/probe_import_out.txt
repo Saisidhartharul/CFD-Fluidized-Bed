@@ -1,0 +1,103 @@
+
+########## TUTORIAL cas, ImportWall(f)
+  EXCEPTION:
+Traceback (most recent call last):
+  File "Unknown", line 22, in attempt
+  File "Unknown", line 35, in <lambda>
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 530, in ImportWall
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 595, in _ImportGeometry
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_application.py", line 194, in _ExecuteScriptingCommand
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\scripting\rocky_scripting.py", line 275, in ImportCustomGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\process_factories\import_geometry_utils.py", line 32, in ObtainRockyDocWithImportedCustomFilenameAndImportInfo
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 440, in ObtainProjectFilename
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 334, in SlotSave
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 337, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 364, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 647, in _AskFileName
+  File "E:\AnsysDev\work\221\s\etk\esss_qt10\source\python\esss_qt10\qt_traits\dialogs.py", line 612, in AskSaveFilename
+TypeError: 'NoneType' object is not subscriptable
+
+
+########## MY cas, ImportWall(f)
+  EXCEPTION:
+Traceback (most recent call last):
+  File "Unknown", line 22, in attempt
+  File "Unknown", line 36, in <lambda>
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 530, in ImportWall
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 595, in _ImportGeometry
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_application.py", line 194, in _ExecuteScriptingCommand
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\scripting\rocky_scripting.py", line 275, in ImportCustomGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\process_factories\import_geometry_utils.py", line 32, in ObtainRockyDocWithImportedCustomFilenameAndImportInfo
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 440, in ObtainProjectFilename
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 334, in SlotSave
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 337, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 364, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 647, in _AskFileName
+  File "E:\AnsysDev\work\221\s\etk\esss_qt10\source\python\esss_qt10\qt_traits\dialogs.py", line 612, in AskSaveFilename
+TypeError: 'NoneType' object is not subscriptable
+
+
+########## MY cas, ImportWall(f, 1.0)
+  EXCEPTION:
+Traceback (most recent call last):
+  File "Unknown", line 22, in attempt
+  File "Unknown", line 37, in <lambda>
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 530, in ImportWall
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 595, in _ImportGeometry
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_application.py", line 194, in _ExecuteScriptingCommand
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\scripting\rocky_scripting.py", line 275, in ImportCustomGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\process_factories\import_geometry_utils.py", line 32, in ObtainRockyDocWithImportedCustomFilenameAndImportInfo
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 440, in ObtainProjectFilename
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 334, in SlotSave
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 337, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 364, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 647, in _AskFileName
+  File "E:\AnsysDev\work\221\s\etk\esss_qt10\source\python\esss_qt10\qt_traits\dialogs.py", line 612, in AskSaveFilename
+TypeError: 'NoneType' object is not subscriptable
+
+
+########## MY cas, ImportGeometries(f)
+  EXCEPTION:
+Traceback (most recent call last):
+  File "Unknown", line 22, in attempt
+  File "Unknown", line 38, in <lambda>
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_deprecated_decorator.py", line 43, in DeprecatedWrapper
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 503, in ImportGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 530, in ImportWall
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 595, in _ImportGeometry
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_application.py", line 194, in _ExecuteScriptingCommand
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\scripting\rocky_scripting.py", line 275, in ImportCustomGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\process_factories\import_geometry_utils.py", line 32, in ObtainRockyDocWithImportedCustomFilenameAndImportInfo
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 440, in ObtainProjectFilename
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 334, in SlotSave
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 337, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 364, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 647, in _AskFileName
+  File "E:\AnsysDev\work\221\s\etk\esss_qt10\source\python\esss_qt10\qt_traits\dialogs.py", line 612, in AskSaveFilename
+TypeError: 'NoneType' object is not subscriptable
+
+
+########## MY msh, ImportWall(f)
+  EXCEPTION:
+Traceback (most recent call last):
+  File "Unknown", line 22, in attempt
+  File "Unknown", line 39, in <lambda>
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 530, in ImportWall
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\ra_study.py", line 595, in _ImportGeometry
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\api\rocky_api_application.py", line 194, in _ExecuteScriptingCommand
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\scripting\rocky_scripting.py", line 275, in ImportCustomGeometries
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\process_factories\import_geometry_utils.py", line 32, in ObtainRockyDocWithImportedCustomFilenameAndImportInfo
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 440, in ObtainProjectFilename
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 334, in SlotSave
+  File "E:\AnsysDev\work\221\s\rocky\rocky30\source\python\rocky30\plugins\project\project_manager.py", line 337, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 364, in _AskAndValidateFileName
+  File "E:\AnsysDev\work\221\s\etk\plugins10\source\python\plugins10\plugins\project_manager\_project_manager.py", line 647, in _AskFileName
+  File "E:\AnsysDev\work\221\s\etk\esss_qt10\source\python\esss_qt10\qt_traits\dialogs.py", line 612, in AskSaveFilename
+TypeError: 'NoneType' object is not subscriptable
+
+
+########## MY cas, GetWallFromFilename
+  returned: []
+  geometries: []
+
+DONE

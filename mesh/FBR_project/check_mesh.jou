@@ -1,0 +1,5 @@
+; Read the generated column mesh and verify topology / face orientation.
+/file/read-case "fbr_column.msh"
+/mesh/check
+/mesh/quality
+/exit yes

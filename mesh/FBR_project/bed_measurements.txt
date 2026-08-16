@@ -1,0 +1,63 @@
+output times : 11   t = 0.000 .. 0.500 s
+
+available particle grid functions:
+   Residence Time
+   Velocity : Rotational : Y
+   Particle Group
+   Particle Boundary
+   Orientation : Vector : Z
+   Particle Shape
+   Velocity : Translational : Z
+   Coordinate : X
+   Velocity : Rotational : Absolute
+   Velocity : Rotational : X
+   Velocity : Translational : Absolute
+   Orientation : Vector : X
+   Temperature
+   Particle Size
+   Orientation : Angle
+   Coordinate : Y
+   Particle Type
+   Velocity : Translational : X
+   Particle Mass
+   Particle Volume
+   Particle Equivalent Diameter
+   Coordinate : Z
+   Particle Inlet
+   Velocity : Rotational : Z
+   Particle ID
+   System Released Time
+   Particle Material
+   Orientation : Vector : Y
+   Particle Surface Area
+   Velocity : Translational : Y
+
+=== PARTICLE COUNT ===
+  simulated      : 80214
+  doc prediction : ~80,200
+
+z from grid function 'Coordinate : Z'  (n=80214)
+
+=== BED INVENTORY ===
+  target mass          : 4.0320 kg
+  actual mass          : 4.0320 kg  (80214 x 3.351e-08 m3 x 1500)
+  actual solids volume : 0.002688 m3  (target 0.002688)
+
+=== SETTLED BED HEIGHT ===
+  max particle z       : 0.4213 m
+  z at  99.9 percentile : 0.4201 m
+  z at  99.5 percentile : 0.4178 m
+  z at  99.0 percentile : 0.4151 m
+  z at  98.0 percentile : 0.4103 m
+  z at  95.0 percentile : 0.3976 m
+
+  H (99th pct)         : 0.4151 m      (doc expects 0.38 - 0.42)
+  alpha_p = V_s/(W*D*H): 0.5782        (doc expects 0.60 - 0.63)
+  H (99.9th pct)       : 0.4201 m  ->  alpha_p = 0.5713
+
+  dp_plateau from actual inventory : 3528.8 Pa   (doc reference 3529 Pa)
+
+=== BED AT REST? ===
+  'Velocity : Translational : Absolute': mean 0.00002  max 0.00875 m/s
+
+__MEASURE_DONE__
